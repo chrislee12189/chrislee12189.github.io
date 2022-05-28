@@ -3,13 +3,15 @@
     font-family: "dosis";
     --text-primary: #b6b6b6;
     --text-secondary: #ececec;
+    --text-tertiary: #141418;
     --background-primary:#23232e;
     --background-secondary:#141418;
+    --background-tertiary: #adadad;
 }
 
 body {
-    background-color: white;
-    color: black;
+    background-color: var(--background-secondary);
+    color: var(--text-primary);
     padding: 0;
     margin: 0;
 }
@@ -24,6 +26,7 @@ main {
     position: fixed;
     background-color: var(--background-primary);
     transition: 250ms ease;
+    
 }
 
 .navbar-nav {
@@ -85,6 +88,23 @@ margin:0 1.5rem;
     transition: var( --transition-speed);
 }
 
+h1 {
+    display:flex;
+    justify-content: center;
+    color: var(--text-primary)
+}
+.cherrytree {
+display:flex;
+align-items: center;
+justify-content:center;
+max-width: 100%;
+max-height: 100%;
+}
+
+p {
+display: flex;
+justify-content:center;
+}
 //Small Screen Breakpoint
 @media only screen and (max-width:800px) {
     .navbar {

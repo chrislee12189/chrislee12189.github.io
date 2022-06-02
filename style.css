@@ -91,38 +91,78 @@ h1 {
   max-width: 100vw;
   max-height: 100vh; }
 
-p {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; }
+#resumebody {
+  background-color: var(--background-secondary); }
 
-#resumediv1 h3 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  color: var(--text-tertiary); }
+#container1 {
+  margin: 5px;
+  padding: 15px;
+  max-width: 25vw;
+  height: 50vh;
+  background-color: red;
+  float: right;
+  color: black; }
 
-#resumediv1 {
-  width: 50%;
+#container2 {
+  padding: 15px;
+  max-width: 50vw;
   height: fit-content;
-  background-color: var(--background-tertiary);
-  color: var(--text-tertiary);
-  padding: 50px;
-  margin: 20px;
-  display: flex;
-  position: relative;
-  float: right; }
+  background-color: yellow;
+  color: black; }
 
-#resumediv2 {
-  width: 50%;
+#container3 {
+  padding: 15px;
+  max-width: 50vw;
   height: fit-content;
-  background-color: var(--background-tertiary);
-  color: var(--text-tertiary);
-  padding: 50px;
-  margin: 20px;
+  background-color: green;
+  color: black; }
+
+#container4 {
+  padding: 15px;
+  max-width: 50vw;
+  height: fit-content;
+  background-color: blue;
+  color: black; }
+
+.resumepics {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100%; }
+
+.resumelistpics {
+  height: 40vh; }
+
+#resumefakepics {
+  max-height: 45%;
+  min-width: 20px;
+  object-fit: cover;
+  vertical-align: bottom;
+  display: flex; }
+
+#aboutmebody {
+  background-image: url(./aboutmebg.jpg);
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-weight: bold;
+  font-size: 30px; }
+
+#profilepicdiv {
   position: relative;
-  float: right; }
+  text-align: center;
+  color: white; }
+
+#textblockdiv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: fit-content;
+  transform: translate(-50%, -50%);
+  background-color: var(--background-primary);
+  color: var(--text-primary); }
 
 @media only screen and (max-width: 800px) {
   .navbar {

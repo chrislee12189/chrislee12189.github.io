@@ -166,21 +166,21 @@ h1 {
   height: 90%; }
 
 .cardcontainer {
-  width: 950px;
-  height: 700px;
+  width: 70vw;
+  height: 780vh;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   gap: 40px;
-  background-color: red; }
+  background-color: green; }
 
 .cardcontainer:hover > .card1 {
   cursor: pointer;
   transform: rotateY(180deg); }
 
 .card1 {
-  height: 50%;
-  width: 50%;
+  height: 200px;
+  width: 200px;
   position: relative;
   transition: transform 1500ms;
   transform-style: preserve-3d; }
@@ -210,8 +210,8 @@ h1 {
   transform: rotateY(180deg); }
 
 .card2 {
-  height: 50%;
-  width: 50%;
+  height: 200px;
+  width: 200px;
   position: relative;
   transition: transform 1500ms;
   transform-style: preserve-3d; }

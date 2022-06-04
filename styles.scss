@@ -40,6 +40,8 @@ main {
     position: fixed;
     background-color: var(--background-primary);
     transition: 250ms ease;
+    z-index: 1;
+    
     
 }
 
@@ -181,6 +183,8 @@ background-color: var(--background-secondary);
 }
 //about me page needs icons added with hover effects
 #aboutmebody{
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding:0;
     box-sizing: border-box;
@@ -204,9 +208,10 @@ background-color: var(--background-secondary);
     width:950px;
     height: 700px;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
     gap:40px;
-    // background-color: red;
+    background-color: red;
     
     
 }
@@ -217,9 +222,8 @@ background-color: var(--background-secondary);
 }
 
 .card1{
-    height:100%;
-    width:100%;
-   
+    height: 50%;
+    width:50%;
     position: relative;
     transition: transform 1500ms;
     transform-style: preserve-3d;
@@ -237,7 +241,7 @@ backface-visibility: hidden;
 }
 
 .front1{
-    background-image: url(https://source.unsplash.com/random/950x700);
+    background-image: url(https://source.unsplash.com/random/);
 }
 
 .back1{
@@ -256,8 +260,8 @@ gap: 5rem;
 }
 
 .card2{
-    height:100%;
-    width:100%;
+    height: 50%;
+    width:50%;
     position: relative;
     transition: transform 1500ms;
     transform-style: preserve-3d;
@@ -275,7 +279,7 @@ backface-visibility: hidden;
 }
 
 .front2{
-background-image: url(https://source.unsplash.com/random/950x700);
+background-image: url(https://source.unsplash.com/random/);
 }
 
 .back2{
@@ -301,28 +305,24 @@ gap: 5rem;
 }
 
 
+.hobbymain{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+}
+//still fighting with lines 311-320 formatting applies little effect....
+.godofwar{
+    color: red;
+    width:80%;
+    height:700px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.godofwarvideo{
+    display:flex;
+    justify-content: center;
+}
 
 
 

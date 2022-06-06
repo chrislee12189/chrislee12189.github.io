@@ -83,7 +83,10 @@ main {
 h1 {
   display: flex;
   justify-content: center;
-  color: var(--text-primary); }
+  color: var(--text-primary);
+  text-decoration: underline;
+  font-weight: bold;
+  font-style: italic; }
 
 .cherrytree {
   display: flex;
@@ -166,7 +169,7 @@ h1 {
   height: 90%; }
 
 .cardcontainer {
-  width: 70vw;
+  width: 50vw;
   height: 780vh;
   display: flex;
   flex-wrap: wrap;
@@ -179,8 +182,9 @@ h1 {
   transform: rotateY(180deg); }
 
 .card1 {
-  height: 200px;
-  width: 200px;
+  height: 500px;
+  width: 500px;
+  margin: auto;
   position: relative;
   transition: transform 1500ms;
   transform-style: preserve-3d; }
@@ -210,8 +214,9 @@ h1 {
   transform: rotateY(180deg); }
 
 .card2 {
-  height: 200px;
-  width: 200px;
+  height: 500px;
+  width: 500px;
+  margin: auto;
   position: relative;
   transition: transform 1500ms;
   transform-style: preserve-3d; }
@@ -260,6 +265,11 @@ h1 {
 .godofwarvideo {
   display: flex;
   justify-content: center; }
+
+.rainbowtext {
+  background-image: linear-gradient(to right, red, orange, yellow, green, indigo, violet);
+  -webkit-background-clip: text;
+  color: transparent; }
 
 @media only screen and (max-width: 800px) {
   .navbar {

@@ -14,6 +14,11 @@ body {
   padding: 0;
   margin: 0; }
 
+.homebody {
+  background-color: rgba(212, 207, 207, 0.854);
+  margin: 0;
+  padding: 0; }
+
 #default {
   background-color: var(--background-primary);
   justify-content: center;
@@ -88,17 +93,45 @@ h1 {
   font-weight: bold;
   font-style: italic; }
 
-.cherrytree {
+.gamer {
   display: flex;
-  align-items: center;
   justify-content: center;
-  max-width: 100vw;
-  max-height: 100vh; }
+  align-items: center;
+  width: 30vw;
+  box-shadow: 0 0 5px 10px; }
+
+.gamer:hover {
+  transform: scale(1.05);
+  transition-duration: 500ms; }
+
+.titan {
+  display: flex;
+  flex-direction: row;
+  float: right;
+  width: 30vw;
+  box-shadow: 0 0 5px 10px; }
+
+.titan:hover {
+  transform: scale(1.05);
+  transition-duration: 500ms; }
+
+.gamertext {
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-style: oblique;
+  font-size: larger; }
+
+.titantext {
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-style: oblique;
+  font-size: larger; }
 
 #resumebody {
   background-color: var(--background-secondary); }
 
 #container1 {
+  box-sizing: border-box;
+  border-style: inset;
+  border-style: solid, grey;
   margin: 5px;
   padding: 15px;
   max-width: 25vw;
@@ -112,21 +145,30 @@ h1 {
   max-width: 50vw;
   height: fit-content;
   background-color: yellow;
-  color: black; }
+  color: black;
+  box-sizing: border-box;
+  border-style: inset;
+  border-style: solid, grey; }
 
 #container3 {
   padding: 15px;
   max-width: 50vw;
   height: fit-content;
   background-color: green;
-  color: black; }
+  color: black;
+  box-sizing: border-box;
+  border-style: inset;
+  border-style: solid, grey; }
 
 #container4 {
   padding: 15px;
   max-width: 50vw;
   height: fit-content;
   background-color: blue;
-  color: black; }
+  color: black;
+  box-sizing: border-box;
+  border-style: inset;
+  border-style: solid, grey; }
 
 .resumepics {
   list-style: none;
@@ -174,8 +216,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 40px;
-  background-color: green; }
+  gap: 40px; }
 
 .cardcontainer:hover > .card1 {
   cursor: pointer;

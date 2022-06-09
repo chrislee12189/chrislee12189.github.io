@@ -1,3 +1,5 @@
+//this section covers styling of backgrounds and margins to set a default page decoration/setup
+
 @mixin default {
     background-color: var(--background-primary);
     justify-content: center;
@@ -40,16 +42,24 @@ main {
     padding: 1rem;
 }
 
+//this section creates, formats and styles the navbar and the icons in the navbar. most styling affects desktop mode
 .navbar {
     
     position: fixed;
     background-color: var(--background-primary);
     transition: 250ms ease;
     z-index: 1;
+    height: 100vh;
     
     
 }
-
+.navbar:hover {
+    width: 16rem;
+}
+.navbar:hover .link-text {
+    display: inline;
+    transition: opacity var(--transition-speed);
+}
 .navbar-nav {
     list-style:none;
     //items in nav bar have no margin because of the following two properties
@@ -80,7 +90,7 @@ main {
     transition: var(--transition-speed);
 }
 
-.navlink:hover {
+.nav-link:hover {
     filter:grayscale (0%) opacity(1);
     background-color: var(--background-secondary);
     color: var(--text-secondary);
@@ -117,12 +127,12 @@ h1 {
     font-weight:bold;
     font-style: italic;
 }
-//maybe add hover to text, make homepage feel more interactive/full
+//this section covers the homepage, it has 2 pics and some simple text. all interactable on hover. desktop only
 .gamer{
 display:flex;
 justify-content: center;
 align-items: center;
-width:30vw;
+width:20vw;
 box-shadow: 0 0 5px 10px;
 
 }
@@ -135,7 +145,7 @@ box-shadow: 0 0 5px 10px;
 display:flex;
 flex-direction: row;
 float: right;
-width:30vw;
+width:20vw;
 box-shadow: 0 0 5px 10px;
 }
 
@@ -147,16 +157,23 @@ box-shadow: 0 0 5px 10px;
     font-family: 'Kdam Thmor Pro', sans-serif; 
     font-style: oblique;
     font-size:larger;
-
+    transition: all 1s ease-in-out;
 
 }
 .titantext{
     font-family: 'Kdam Thmor Pro', sans-serif; 
     font-style: oblique;
     font-size: larger;
-
+transition: all 1s ease-in-out;
+}
+.gamertext:hover{
+    transform: scale(.75);
+} 
+.titantext:hover{
+    transform: scale(.75);
 }
 
+//this section covers the resume page
 #resumebody{
 background-color: var(--background-secondary);
 
@@ -235,7 +252,8 @@ background-color: var(--background-secondary);
     display: flex;
     
 }
-//about me page needs icons added with hover effects
+
+//this section covers the about me page. card container is the parent div, cards 1 and 2 are the children. they exsist inside the parent container.
 #aboutmebody{
     display: flex;
     flex-direction: column;
@@ -348,6 +366,7 @@ align-items: center;
 gap: 5rem;
 }
 
+//this section covers the professional career page
 #pcbody{
     display:flex;
     flex-direction: column;
@@ -360,7 +379,7 @@ gap: 5rem;
     max-height: 80%;
 }
 
-
+//this section targets the hobby page
 .hobbymain{
     display:flex;
     flex-direction: column;
@@ -387,8 +406,13 @@ background-image: linear-gradient(to right, red, orange, yellow, green, indigo, 
 color:transparent;
 }
 
-
-
+#top{
+    float:right;
+}
+#bottom{
+    float:right;
+}
+//some pages are not idividually styles here in css. the .body and @mixin can and was used to apply default styling. HTML also has some simple sstyle tags for when i needed only minor styling
 
 
 
@@ -492,40 +516,68 @@ color:transparent;
 //breakpoints may need adjusting at the end. will need to see how it affects overall formatting
 
 //Small Screen Breakpoint
-@media only screen and (max-width:800px) {
+
+
+//Tablet Screen Breakpoints
+@media only screen and (max-width:990px) {
     .navbar {
         bottom: 0;
-        width: 100vw;
-        height: 5rem;
+        width: 5rem;
+        height: 100vh;
         position: fixed; 
     }
     .fa {
         display:block;
     }
-    .navbar-nav {
-        display: flex;
-        flex-direction: row;
-        }
+    // .navbar-nav {
+    //     display: flex;
+    //     flex-direction: row;
+    //     }
     .nav-link {
             justify-content: center;
+            
             //content centered along x axis here
         }
+}
+
+@media only screen and (max-width:570px) {
+    .navbar {
+        bottom: 0;
+        width: 100vw;
+        height: 5rem;
+        position: fixed;
+    }
+    .fa {
+        display:block;
+    }
+    .navbar-nav{
+        display: flex;
+        flex-direction: row; 
+    }
+    .nav-link {
+            justify-content: center;
+            width:80px;
+        }
     main {
-        margin: 0;
+        margin:0;
+        margin-bottom: 5rem;
     }
 }
 
+//large bpoints commented out for test to see if needed or not, kept jsut incase 
+
+
 // Large Screen Breakpoints
-@media only screen and (min-width: 800px) {
-    .navbar {
-        top: 0;
-        width: 5rem;
-        height: 100vh;}
-    .navbar:hover {
-        width: 16rem;
-    }
-    .navbar:hover .link-text {
-        display: inline;
-        transition: opacity var(--transition-speed);
-    }
-}
+// @media only screen and (min-width: 1200px) {
+//     .navbar {
+//         top: 0;
+//         width: 5rem;
+//         height: 100vh;}
+//     .navbar:hover {
+//         width: 16rem;
+//     }
+//     .navbar:hover .link-text {
+//         display: inline;
+//         transition: opacity var(--transition-speed);
+//     }
+// }

@@ -4,7 +4,11 @@ My Portfolio Website
 #### *Welcome to the Documentation pertaining to my website. This Documentation will cover: Purpose, Functionality/Features, Sitemap, Screenshots, Target Audience and the Tech Stack used to create the site.*<br>
 </br>
 
-### **The link to my published Portfolio Website can be found here:** 
+## **The link to my published Portfolio Website can be found here:** 
+
+## **The link to my Github Repo is here:**
+https://github.com/chrislee12189
+
 <br>
 
 </br>

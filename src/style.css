@@ -1,0 +1,433 @@
+:root {
+  font-size: 20px;
+  font-family: "dosis";
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --text-tertiary: #141418;
+  --background-primary: #23232e;
+  --background-secondary: #141418;
+  --background-tertiary: #adadad; }
+
+body {
+  background-color: var(--background-secondary);
+  color: var(--text-primary);
+  padding: 0;
+  margin: 0; }
+
+.homebody {
+  background-color: rgba(212, 207, 207, 0.854);
+  margin: 0;
+  padding: 0; }
+
+#default {
+  background-color: var(--background-primary);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 5%;
+  margin-right: 10%;
+  margin-top: 0%; }
+
+main {
+  margin-left: 5rem;
+  padding: 1rem; }
+
+.navbar {
+  position: fixed;
+  background-color: var(--background-primary);
+  transition: 250ms ease;
+  z-index: 1;
+  height: 100vh; }
+
+.navbar:hover {
+  width: 16rem; }
+
+.navbar:hover .link-text {
+  display: inline;
+  transition: opacity var(--transition-speed); }
+
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%; }
+
+.nav-item {
+  width: 100%; }
+
+.nav-item:last-child {
+  margin-top: auto; }
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  filter: grayscale(100%) opacity(0.5);
+  transition: var(--transition-speed); }
+
+.nav-link:hover {
+  filter: grayscale 0% opacity(1);
+  background-color: var(--background-secondary);
+  color: var(--text-secondary); }
+
+.link-text {
+  display: none;
+  margin: 1rem; }
+
+.nav-link i {
+  min-width: 2rem;
+  margin: 0 1.5rem; }
+
+.fa-primary {
+  color: #ff7eee; }
+
+.fa-secondary {
+  color: #df49a6; }
+
+.fa-primary,
+.fa-secondary {
+  transition: var(--transition-speed); }
+
+h1 {
+  display: flex;
+  justify-content: center;
+  color: var(--text-primary);
+  text-decoration: underline;
+  font-weight: bold;
+  font-style: italic; }
+
+.gamer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  box-shadow: 0 0 5px 10px; }
+
+.gamer:hover {
+  transform: scale(1.05);
+  transition-duration: 500ms; }
+
+.titan {
+  display: flex;
+  flex-direction: row;
+  float: right;
+  width: 20vw;
+  box-shadow: 0 0 5px 10px; }
+
+.titan:hover {
+  transform: scale(1.05);
+  transition-duration: 500ms; }
+
+.gamertext {
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-style: oblique;
+  font-size: larger;
+  transition: all 1s ease-in-out; }
+
+.titantext {
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-style: oblique;
+  font-size: larger;
+  transition: all 1s ease-in-out; }
+
+.gamertext:hover {
+  transform: scale(0.75); }
+
+.titantext:hover {
+  transform: scale(0.75); }
+
+#resumebody {
+  background-color: var(--background-secondary); }
+
+#container1 {
+  box-sizing: border-box;
+  border-style: inset;
+  border-style: solid, grey;
+  margin: 5px;
+  padding: 15px;
+  max-width: 25vw;
+  height: fit-content;
+  background-color: red;
+  float: right;
+  color: black; }
+
+#container2 {
+  padding: 15px;
+  max-width: 50vw;
+  height: fit-content;
+  background-color: yellow;
+  color: black;
+  box-sizing: border-box;
+  border-style: inset;
+  border-style: solid, grey; }
+
+#container3 {
+  padding: 15px;
+  max-width: 50vw;
+  height: fit-content;
+  background-color: green;
+  color: black;
+  box-sizing: border-box;
+  border-style: inset;
+  border-style: solid, grey; }
+
+#container4 {
+  padding: 15px;
+  max-width: 50vw;
+  height: fit-content;
+  background-color: blue;
+  color: black;
+  box-sizing: border-box;
+  border-style: inset;
+  border-style: solid, grey; }
+
+#aboutmebody {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  overflow: hidden;
+  background: var(--background-secondary);
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-weight: bold;
+  font-size: 20px; }
+
+#aboutmemain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90%; }
+
+.cardcontainer {
+  width: 50vw;
+  height: 780vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 40px; }
+
+.cardcontainer:hover > .card1 {
+  cursor: pointer;
+  transform: rotateY(180deg); }
+
+.card1 {
+  height: 500px;
+  width: 500px;
+  margin: auto;
+  position: relative;
+  transition: transform 1500ms;
+  transform-style: preserve-3d; }
+
+.front1, .back1 {
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem;
+  box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+  position: absolute;
+  backface-visibility: hidden; }
+
+.front1 {
+  background-image: url(https://source.unsplash.com/random/); }
+
+.back1 {
+  background-color: #3a3a3a;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem; }
+
+.cardcontainer:hover > .card2 {
+  cursor: pointer;
+  transform: rotateY(180deg); }
+
+.card2 {
+  height: 500px;
+  width: 500px;
+  margin: auto;
+  position: relative;
+  transition: transform 1500ms;
+  transform-style: preserve-3d; }
+
+.front2, .back2 {
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem;
+  box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+  position: absolute;
+  backface-visibility: hidden; }
+
+.front2 {
+  background-image: url(https://source.unsplash.com/random/); }
+
+.back2 {
+  background-color: #3a3a3a;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem; }
+
+#pcbody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.pcpic {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  max-width: 50vw;
+  border-style: solid;
+  border-color: red; }
+
+.pcul {
+  border-style: solid;
+  border-color: red;
+  padding: 73px;
+  width: 60vw; }
+
+.hobbymain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.godofwar {
+  color: red;
+  width: 80%;
+  height: 700px; }
+
+.godofwarvideo {
+  display: flex;
+  justify-content: center; }
+
+.rainbowtext {
+  background-image: linear-gradient(to right, red, orange, yellow, green, indigo, violet);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 35px; }
+
+#top {
+  float: right; }
+
+#bottom {
+  float: right; }
+
+.blogpostpics {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-left: 20%;
+  max-width: 50vw;
+  border-style: solid; }
+
+.blogpostpics:hover {
+  transform: scale(1.3);
+  transition: .5s; }
+
+.blogmain {
+  display: inline-block; }
+
+.blogtexts {
+  color: green;
+  padding: 5% 10%;
+  margin: 50px; }
+
+.bloghyperlink {
+  float: right;
+  padding: 25px; }
+
+.blogjump {
+  margin: 25px;
+  float: center; }
+
+.blogheading {
+  background-color: green;
+  color: black;
+  padding: 50px; }
+
+.blogheaderimg {
+  max-width: 100vw; }
+
+.blogfooter {
+  font-size: 20px;
+  color: orange;
+  margin-left: 10%; }
+
+.hobbiesheader {
+  background-color: green;
+  color: black;
+  padding: 50px;
+  width: 100vw; }
+
+.aboutmeheader {
+  width: 100vw;
+  background-color: green;
+  color: black;
+  padding: 50px; }
+
+.profcareerheader {
+  background-color: green;
+  color: black;
+  padding: 50px;
+  width: 100vw; }
+
+.resumeheader {
+  background-color: green;
+  color: black;
+  padding: 50px; }
+
+.homeheader {
+  background-color: green;
+  color: black;
+  padding: 50px; }
+
+@media only screen and (max-width: 990px) {
+  .navbar {
+    bottom: 0;
+    width: 5rem;
+    height: 100vh;
+    position: fixed; }
+
+  .fa {
+    display: block; }
+
+  .nav-link {
+    justify-content: center; } }
+@media only screen and (max-width: 570px) {
+  .navbar {
+    bottom: 0;
+    width: 100vw;
+    height: 5rem;
+    position: fixed; }
+
+  .fa {
+    display: block; }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: row; }
+
+  .nav-link {
+    justify-content: center;
+    width: 80px; }
+
+  main {
+    margin: 0;
+    margin-bottom: 5rem; } }
+
+/*# sourceMappingURL=style.css.map */
